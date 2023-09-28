@@ -67,12 +67,10 @@ function checkForWin() {
       }
     }
   
-    // Check for a tie
     if (boardArray.every((cell) => cell !== '')) {
       return 'tie';
     }
   
-    // If no winner or tie
     return null;
   }
   
@@ -85,5 +83,4 @@ function resetGame() {
   message.textContent = `Player ${players[currentPlayer]}'s turn`;
 }
 
-// Initialize the game
 resetGame();
